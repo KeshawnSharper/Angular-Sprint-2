@@ -1,1 +1,26 @@
-<p>dc works!</p>
+<div class="search">
+    <input [(ngModel)]="heroName" class="round" type="text"  placeholder="Name of Hero">
+    
+    <button type="button" class="btn btn-primary" (click)="searchHeroes()">Search DC Heroes </button>
+</div>
+<!-- <div class="card" *ngFor="let post of heroes">
+    <h6>{{post.biography.publisher}}</h6>
+    <h6>{{post.name}}</h6>
+    <img src="{{post.images.lg}}" alt="Girl in a jacket" width="500" height="600">
+    
+</div> -->
+<div class="grid-container">
+<div class="flip-card grid-item" *ngFor="let post of heroes">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="{{post.images.sm}}" alt="Avatar" >
+      </div>
+      <div class="flip-card-back">
+        <h6>{{post.biography.name}}</h6>
+            <h6>{{post.biography.fullName}}</h6>
+            <h6>{{post.biography.placeOfBirth}}</h6>
+            <h6>{{post.biography.firstAppearance}}</h6>
+      </div>
+  </div>
+</div>
+</div>
