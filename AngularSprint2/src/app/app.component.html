@@ -1,5 +1,29 @@
-<a routerLink="cars">cars</a>
-<a routerLink="cars">cars</a>
-<a routerLink="cars">cars</a>
-
-<router-outlet></router-outlet>
+<nav class="navbar">
+    <button (click)="toggleButton()" ><div class="brand-title"> The Universe of Heros</div></button>
+    <a href="#" class="toggle-button">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </a>
+    <div class="navbar-links">
+      <ul>
+        <li>
+          <ul *ngIf="showDc">
+          <a routerLink="/DC" class="bar">DC</a> 
+        </ul>
+      </li>
+        <li>
+          <ul *ngIf="showMarvel">
+            <a routerLink="/Marvel" class="bar"> Marvel</a>
+             
+          </ul>
+        </li>
+        <li><a href="#">Home</a></li>
+      </ul>
+    </div>
+  </nav>
+  
+  
+  <div>
+    <router-outlet></router-outlet>
+  </div>
