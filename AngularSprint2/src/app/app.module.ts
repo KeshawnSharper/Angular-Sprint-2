@@ -9,7 +9,6 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule  } from "@angular/forms";
 import { DCComponent } from './dc/dc.component';
 import { MarvelComponent } from './marvel/marvel.component';
-import { HomeComponent } from './home/home.component';
 
 
 @NgModule({
@@ -17,9 +16,7 @@ import { HomeComponent } from './home/home.component';
     AppComponent,
     DCComponent,
     MarvelComponent,
-    HomePageComponent,
-    HomeComponent,
-    
+    HomePageComponent,    
   ],
   imports: [
     BrowserModule,
