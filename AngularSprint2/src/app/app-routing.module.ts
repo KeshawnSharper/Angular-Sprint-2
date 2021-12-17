@@ -1,10 +1,13 @@
-import { NgModule } from '@angular/core';
+import { Host, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { CarsComponent } from './cars/cars.component';
+import { DCComponent } from './dc/dc.component';
+import { HomePageComponent } from './home-page/home-page.component';
+import { MarvelComponent } from './marvel/marvel.component';
 
 const routes: Routes = [
-  {path:"",component:CarsComponent },
-  {path:"cars",component:CarsComponent }
+  {path:"",component:HomePageComponent },
+  {path:"Marvel",component:MarvelComponent },
+  {path:"DC",component:DCComponent }
 ];
 
 @NgModule({
