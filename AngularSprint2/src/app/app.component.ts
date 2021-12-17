@@ -6,5 +6,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'AngularSprint2';
+  title = 'heros';
+
+  
+  showMarvel: boolean = true;
+  showDc: boolean = true;
+
+  toggleButton(){
+    
+    this.showMarvel = !this.showDc;
+    this.showDc = !this.showMarvel;
+  }
+
 }
